@@ -1,4 +1,4 @@
-export default function(value = '', width = '318px') {
+export default function TextField(value = '', width = '318px') {
     const textField = document.createElement('input');
     textField.type = 'text';
     textField.value = value;

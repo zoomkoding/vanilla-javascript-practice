@@ -2,7 +2,7 @@ import Checkbox from '../Atoms/CheckBox.js';
 import Button from '../Atoms/Button.js';
 import TextField from '../Atoms/TextField.js';
 
-export default function(isAdded = false, name = '') {
+export default function Task(isAdded = false, name = '') {
     const task = document.createElement('div');
     const textField = isAdded ? TextField(name, '226px') : TextField();
     let isTextFieldEnabled = true;

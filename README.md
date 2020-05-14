@@ -1,5 +1,10 @@
 # Vanilla Javascript To Do List Page Clone Coding
 
+## 코드 돌리기
+
+    npm install
+    npm start
+
 ## 목표
 
 [To Do List Page](https://codepen.io/erinmars/pen/JJObjE) 클론하기!
