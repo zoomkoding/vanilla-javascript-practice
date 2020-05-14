@@ -1,4 +1,4 @@
-# Vanilla Javascript Practice
+# Vanilla Javascript To Do List Page Clone Coding
 
-## Practice project
-https://codepen.io/erinmars/pen/JJObjE
+## Cloning Target 
+[To Do List Page](https://codepen.io/erinmars/pen/JJObjE)
