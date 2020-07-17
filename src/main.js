@@ -1,5 +1,5 @@
-import Home from "./pages/home/index.js";
-import Login from "./pages/login/index.js";
+import Home from "./components/pages/home.js";
+import Login from "./components/pages/login.js";
 const root = document.querySelector('#App');
 const pages = {
   // hash: url
@@ -8,11 +8,39 @@ const pages = {
 
 };
 
-const render = () => {
+const project = {
+  id: 1,
+  name: 'Jinhyeok',
+  groups: [
+    {
+      id: 1,
+      title: '📗todo',  
+      notes: [
+        {
+          id: 1,
+          
+        }
+      ],
+    },
+    {
+      id: 2,
+      title: '📒doing',  
+      notes: [],
+    },
+    {
+      id: 3,
+      title: '📕done',  
+      notes: [],
+    }
+  ]
+}
+
+const render = async () => {
   try {
     // url의 hash를 취득
     const hash = location.hash.replace('#', '');
-    const page = new pages[hash]();
+    const page = new pages[hash](project);
+    console.log(page.getHtml());
     root.innerHTML = page.getHtml();
   } catch (err) {
     console.error(err);
